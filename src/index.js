@@ -1,6 +1,6 @@
 const express = require('express')
 const { Pool } = require('pg')
-const PORT = 3003
+const PORT = 5432
 require ('dotenv').config
 const routes = require('./routes')
 
@@ -17,4 +17,4 @@ app.use((error, req, res, next) => {
 })
 
 //app.listen(3333, () => console.log('server está rodando 3'))
-app.listen(process.env.PORT || 3004 , () => console.log('O server está rodando na porta 3004'))
+app.listen(process.env.PORT || 5432 , () => console.log('O server está rodando na porta 5432'))
